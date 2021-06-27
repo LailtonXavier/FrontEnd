@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    
+}
+header{
+    background-color: rgb(8, 5, 5);
+    color: wheat;
+    padding: 30px ;
+    text-align: center;
+}
+form{
+    background-color: #ccc;
+    width: 500px;
+    height: 450px;
+    margin: 0px auto;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+
+}
+      
+      
+      /* Search */
+input[type=text]{
+    width: 85%;
+    padding: 10px 25px;
+    border: 2px solid rgb(212, 196, 196);
+    font-size: 16px;
+    background-color: white;
+    /*Animação*/
+    transition: width 0.4s ease-in-out;
+    display: block;
+ 
+}
+
+input[type=text]:focus{
+    width: 100%;
+}
+.search{
+    position: relative;
+    width: 200px; 
+
+
+}
+.fa-search{
+    position: absolute;
+    left: 58px;
+    margin-top: 12px;
+    color: #ccc;
+    font-size: 18px;
+}
+    /*Name*/
+.fa-user{
+    position: absolute;
+    left: 58px;
+    margin-top: 13px;
+    color: #ccc;
+}
+
+/*...Fim search*/
+
+/*responsive full*/
+select, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/*Submit*/
+input[type=submit]{
+    background-color: rgb(45, 245, 61);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+/*conteiner*/
+.container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*  Dividido em duas colunas = 25% e 75% ate dar 100%*/
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+/*Limpar os flutuantes depos da coluna*/
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Quando a tela for menor que 600px
+vai ficar duas colunas uma encima da outra*/
+
+@media screen and (max-width: 600px){
+        form{
+            width: 100%;
+            height: 600px;
+        }
+      
+        .col-25, .col-75, input[type=submit]{
+            width: 100%;
+            margin-top: 0;
+        }
+        .fa-search{
+            left: 5px;
+        }
+        .fa-user{
+            left: 6px;
+        }
+
+}

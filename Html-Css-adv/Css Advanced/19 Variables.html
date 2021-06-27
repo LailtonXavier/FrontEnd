@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="19 Variables.css">
+    <title>Var</title>
+</head>
+<body>
+    <h1>Using the var() function</h1>
+
+    <div class="container">
+    <h2>Lorem Ipsum</h2>
+    <p>
+        Overriding variable, podemos criar novas var, e por fim podemos usar Var no Media Queries
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+    <p>
+        <button>Yes</button>
+        <button>No</button>
+    </p>
+    </div> 
+    <button type="button" onclick="obterValor()">Definir Var Css com Js </button>
+    <button type="button" onclick="definir()">Mudar Var Css com Js </button>
+
+
+        <!--Podemos mudar usando JavaScript  -->
+        <script>
+            // obetendo a ray do elemento
+
+            let rais = document.querySelector(':root');
+
+                // criar var para obter o valor
+                //pegando o valor
+                function obterValor(){
+                    let varStyle = getComputedStyle(rais);
+                    alert("the value of --blue is: " + varStyle.getPropertyValue('--blue'));
+                }
+                //mudando o seu valor para outra cor
+                function definir(){
+                    rais.style.setProperty('--blue', 'black');
+                }
+        </script>
+</body>
+</html>

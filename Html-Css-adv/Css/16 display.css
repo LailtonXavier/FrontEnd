@@ -1,0 +1,28 @@
+
+/*display: inline = vai colocar numa linha so*/
+li{
+    display: inline;
+}
+
+/*display: block = quebra linha ou 100% de largura*/
+span{
+    display: block;
+}
+a#all{
+    display: block;
+}
+
+/*Estilizando a expllicação*/
+#painel, .flip{
+    background: greenyellow;
+    padding: 10px;
+    color: grey;
+    text-shadow: 2px 2px 10px rgb(226, 210, 210);
+    border: 1px solid rgba(170, 159, 159, 0.63);
+    margin: auto;
+    font-size: 18px;
+
+}
+#painel{
+    display: none;
+}

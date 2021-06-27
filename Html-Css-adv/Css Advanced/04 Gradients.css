@@ -1,0 +1,43 @@
+
+div{
+    margin: 8px;
+    border: 2px solid black;
+    height: 80px;
+/*Alinha nomes em tds divs*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body{
+    background-color: #cccccc;
+}
+h1, h2, p{
+    text-align: center;
+    padding: 5px;
+}
+
+#ex1{
+    background-image: linear-gradient(red, yellow);
+}
+#ex2{
+    background-image: linear-gradient(to left, red, yellow);
+}
+
+#ex3{
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+#ex4{
+    background-image: linear-gradient(to right, rgb(218, 188, 188),orange,
+    yellow,rgb(101, 235, 101),blue,indigo,rgb(243, 196, 243));
+
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+
+}
+
+#ex5{
+    background-image: radial-gradient(circle, red 15%, yellow 20%, green 50%);
+}

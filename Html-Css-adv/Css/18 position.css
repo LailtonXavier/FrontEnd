@@ -1,0 +1,64 @@
+body{
+    margin: 10px;
+}
+/*Static*/
+div#statc{
+    border: 2px solid red;
+    position: static;
+}
+
+/*Relative*/
+div#relat{
+    border: 2px solid green;
+    left: 30px;
+    position: relative;
+}
+h1{
+    margin-top: 80px;
+}
+/*Fixed*/
+div#fix{
+    right: 0px;
+    top: 80px;
+    position: fixed;
+    border: 2px solid grey;
+    background-color: hotpink;
+    width: 300px;
+    
+}
+
+/*Absolute*/
+div#abs{
+    position: absolute;
+    top: 350px;
+    border: 2px solid greenyellow;
+    width: 300px;
+    background-color: rgb(102, 85, 85);
+}
+
+/*Sticky*/
+div#stick{
+    background-color: grey;
+    border: 2px solid greenyellow;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 200px;
+    padding: 5px;
+
+
+}
+
+/*Foto*/
+img{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    /*Clip cortar a foto*/
+    clip: rect(0px, 200px, 400px, 0px);
+
+}
+

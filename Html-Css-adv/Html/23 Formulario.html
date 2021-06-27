@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <p>É usado para coletar a entrada do usuario, 
+        geralmente enviada a um servidor para processamento.
+    </p>
+
+    <p><strong>form</strong> elementento usado para 
+    citar um formulario </p>
+    <p>
+    Um <strong>from </strong>contein: campos de texto, caixa de seleção,
+ botões de opção, botões de envio, etc.</p>
+ <hr>
+
+    <h2>Campo de text: input type text </h2>
+    <form action="" autocomplete="on" target="_blank">
+         <fieldset>
+             <legend>Usando o fildset </legend>
+        <label for='fname'>First name: </label><br>
+        <input type="text" id="fname" name="fnamme"><br />
+        <label for="lname">Ultimo nome:</label><br />
+        <input type="text" name="lname" id="lname"> <br />
+        <input type="submit" value="Enviar">
+        <input type="reset">
+        <!--O atributo For da Label deve ser igual ao id do Input
+            fieldset = legenda e uma borda ao redor-->
+        </fieldset>
+    </form>
+    <hr>
+
+    <h2>Botões do radio: input type radio</h2>
+    <form action="">
+        <input type="radio" id="male" name="gender" value="male" checked="checked">
+        <label for="male">Macho</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Mulher</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Outros</label><br />
+        <input type="submit" value="Enviar">
+
+    </form>
+    <hr>
+
+    <h2>Caixa de verificação: checkeboxes</h2>
+    <form action="">
+        <input type="checkbox" id="veiculo1" name="veiculo" value="bike">
+        <label for="veiculo1">Eu tenho uma bike</label> <br>
+        <input type="checkbox" id="veiculo2" name="veiculo2" value="carro">
+        <label for="veiculo2">Eu tenho um carro</label><br>
+        <input type="checkbox" id="veiculo3" name="veiculo3" value="barco">
+        <label for="veiculo3">Eu tenho um barco</label><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+    <hr>
+
+    <h2>Select </h2>
+    <p>selecionar alguma coisa</p>
+    <label for="cars">Choose a car: </label>
+    <select id="cars" name="cars" size="3" multiple>
+        <option value="volo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>fiat</option>
+    </select>
+        <input type="submit" value="Enviar">
+        <!--size = qnts tamanho vai amostrar na tela
+            multiple = selecionar mais de um -->
+            <hr>
+
+
+            <h2>Area de texto: textarea </h2>
+            <form action="">
+                <textarea name="msg" rows="10" cols="20">
+                    Digite sua historia
+                </textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                </form>
+                <hr>
+
+                <h2>Aniversario</h2>
+                <form action="">
+                    <label for="bit">Aniversario</label>
+                    <input type="date" name="bit" id="bit">
+                    <input type="submit" value="Enviar">
+                </form>
+                <hr>
+
+                <h2>Arquivos file</h2>
+                <form action="">
+                    <label for="file">Selecione o Arquivos</label>
+                    <input type="file" name="file" id="file">
+                    <input type="submit" value="Enviar">
+                </form>
+
+                <h2>\Botão</h2>
+                <button type="button" onclick="alert('Heloo word')">
+                    Click me!
+                </button>
+    
+</body>
+</html>

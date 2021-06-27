@@ -1,0 +1,45 @@
+/*Link unvisited, normal*/
+a#pri:link{
+    color: red;
+    font-size: 20px;
+}
+/*visited*/
+a#pri:visited{
+    color: rgb(240, 104, 13);
+    background-color: mediumaquamarine;
+}
+/*Hover*/
+a#pri:hover{
+    color: rgb(170, 3, 86);
+    /*passar o mouse encima*/
+    text-decoration: overline;
+}
+/*qnd clicar*/
+a#pri:active{
+    color: maroon;
+    background: black;
+}
+/*remover o sublinhados*/
+a#pri{
+    text-decoration: none;
+}
+
+/*Estilizando um link cm botão*/
+a#abot{
+    background: brown;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+a#abot:hover, a#abot:active{
+    border: 1px solid red;
+    border-radius: 15px;
+    background-color: rgb(228, 222, 222);
+    color: rgb(0, 226, 56);
+    text-decoration: overline;
+    font-size: 150%;
+    font-family: monospace;
+
+}

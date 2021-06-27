@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header*/
+header{
+    background-color: rgba(66, 66, 160, 0.911);
+    text-align: center;
+    padding: 20px;
+    
+}
+header h1, p#ps{
+    display: inline;
+    color: white;
+}
+span{
+    color: cornflowerblue;
+}/*Fim header*/
+
+/*Navegação*/
+ul.topnav{
+    margin-top: 0;
+    overflow: hidden;
+    background-color: rgb(161, 156, 156);
+}
+
+
+
+.topnav li {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+li:hover{
+    background-color: rgb(138, 131, 131);
+}
+li a:hover{
+    color:rgb(88, 140, 235) ;
+}
+
+/*Criar duas colunas desigual que flutua uma 
+ao lado da outra */
+
+/*Right column*/
+.rigthcolumn{
+    float: right;
+    width: 70%;
+}
+
+/*Left column*/
+.leftcolumn{
+    float: left;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/*Imagens*/
+.imgs{
+    height: 200px;
+    background-color: #aaa;
+    width: 100%;
+    padding:20px ;
+    text-align: center;
+}
+
+/*Card seria tipo os posts*/
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/*Limpar os flutuantes depois da coluna*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Foot*/
+footer{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+/*
+    Qnd a largura estiver menos de 800px, 
+    empilhe duas collunas uma em cima da outra
+*/
+@media screen and (max-width: 800px){
+    .leftcolumn, .rigthcolumn{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*
+    Qnd estiver menos de 400px 
+    empilhar as navegação um encima do outro
+*/
+
+@media screen and (max-width: 400px) {
+    .topnav li {
+      float: none;
+      width: 100%;
+    }
+  }
+

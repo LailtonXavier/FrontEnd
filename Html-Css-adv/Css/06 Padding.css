@@ -1,0 +1,25 @@
+
+body{
+    margin: 10px;
+    padding: 1px;
+}
+
+.exem{
+    background-color: rgba(23, 158, 248, 0.5);
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+
+}
+h2{
+    width: 300px;
+    background-color: yellow;
+
+}
+p#box{
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: lightblue;
+}

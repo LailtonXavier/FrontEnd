@@ -1,0 +1,48 @@
+Git hub https://github.com/rocketseat-content/youtube-desvendando-css-grid/blob/master/Alinhamento.md
+
+# CSS GRID
+
+ - PODEMOS FATIAR LINHAS E COLUNAS 
+
+# DIFERENÇA GRID E FLEXBOX
+ - Grid: duas dimensões (colunas e linhas)  (o conteudo do body )
+ - Flexbox: uma dimensão (ou coluna ou linha)  ( nav em uma linha so)
+
+Grid
+  - container
+      * display: grid;
+      * grid-template-colunas:        - uma uma;  - qnts colunas   -  1fr (um flexivel )
+      * grid-template-rows: 34px:  - qnts linhas 
+      * grid-gap: padding                - espaçamentos
+      * grid-template-areas: delimitar aresa 
+
+  - items
+      * grid-column:         - vai dizer onde vai ficar nosso item na coluna
+          ...start
+          ...end
+      * grid-row:               - onde vai ficar na nossa linha
+          ...estart
+          ...end
+      * grid-area               - onde vai ficar na area caso use o template-area 
+
+      - virtualmente temos tres linhas: inicio, meio e fim 
+
+ - Alinhamentos
+    * justify-content  ( horizontal )
+    * align-content     ( vertical )
+    * justify-items
+    * align-items
+    * justify-self
+    * align=self
+
+o Grid é bidimensional eixo X e o Y ( X horizontal - left to right | |   Y vertical - top to botton cima pra baixo)
+
+    O FODA MANO = ALINHADO UMA CELULA NO MEIO OU ONDE QUISER
+    - antigamente precisaria flutuar o bagui 
+        - position: absolute;
+        - transform... -50, -50 
+        um bagui assim pow.
+        COM GRID     
+        - pegao o intem
+            justify-self: center
+            align-self: center; 

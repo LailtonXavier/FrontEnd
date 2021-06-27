@@ -1,0 +1,50 @@
+
+article{
+    margin: 5px;
+    margin-bottom: 140px;
+    width: 280px;
+    height: 265px;
+}
+
+#um{
+ 
+    text-align: center;
+    border: 15px solid rgb(231, 113, 2);
+    background-color: blueviolet;
+}
+#dois{
+    
+    text-align: center;
+    border: 15px solid red;
+    background-color: rgb(77, 77, 223);
+}
+#tres{
+    text-align: center;
+    border: 15px solid rgb(0, 255, 0);
+    background-color: rgb(77, 77, 223);
+}
+#quatro{
+    text-align: center;
+    border: 15px solid rgb(239, 234, 243);
+    background-color: rgb(255, 10, 194);
+}
+
+img{
+    width: 280px;
+    height: 265px;
+}
+
+/*Calculo largura*/
+#calculo{
+    width: 260px;
+    padding: 5px;
+    border: 5px solid red;
+    margin: 0;
+}
+/*Calculo altura*/
+#calculo{
+    height: 255;
+    padding: 5px;
+    border: 5px solid red;
+    margin: 0px;
+}

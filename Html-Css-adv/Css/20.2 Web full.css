@@ -1,0 +1,137 @@
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0%;
+        background-color: #999;
+    }
+
+/* cabeçalho */
+    header h1{
+        text-align: center;
+        background-color: rgb(150, 195, 240);
+        font: normal normal bold 25px/80px Arial, serif ;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-top: 2px solid rgba(83, 71, 71, 0.63);
+     /* font
+        font style : normal ou italic 
+        font variant : small caps ou normal
+        font weght : bold ou normal, 500
+        font size/line height
+        font family : Arial, sans-serif ou Time New Roman, times, serif */
+}
+
+ /* Navegação */
+    
+    header nav ul{
+        list-style-type: none;
+        margin-top: 0px;
+        overflow: hidden; /*Não deixou os debaixo subir*/
+        background-color: rgba(15, 20, 5, 0.884);
+    }
+/* float: left ou display: inline = coloca um ao lado do outro */
+   .lis1{
+        float:left;
+    }
+    header li a{
+        display: block; /*Ele deixa como bloco um ao lado do outro*/
+        color: white;
+        padding: 12px 30px;
+        text-align: center;
+        text-decoration: none;
+     
+    }
+    a#navfixed1{
+        background-color: rgb(30, 11, 194);
+       
+    }
+    .lis1 a:hover{
+        background-color: rgb(114, 114, 111);
+    }
+
+    /*Colunas esquerda*/
+    .columns{
+        float:left;
+        padding: 15px;
+    }
+
+    section.clearflix{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /*colluna Content*/
+    #navside{
+        width: 25%;
+    }
+    #content{
+        width: 75%;
+        
+    }
+
+    /*Nav left*/
+    article#navside h2{
+        text-align: center;
+        color: rgb(255, 251, 255);
+        border-bottom: 2px dotted black;
+    }
+    article#navside ul{
+        list-style-type: none;
+        margin-left: -41px;
+           overflow: auto;
+    }
+    .lis2 a{
+        text-decoration: none;
+        margin-bottom: 4px;
+        padding: 8px;        
+        display: block; /*Quando coloquei ele preencheu os tamanho e corrigiu */
+        color: rgb(7, 6, 6);
+        text-align: left;
+        position: -webkit-sticky-;
+    
+    }
+    .lis2:hover{
+        background-color: cornflowerblue;
+    }
+    .lis2:hover{
+        border-left: 3px solid red;
+        border-right: 3px solid red;
+    }
+
+    /*Content*/
+    article#content h2{
+        text-align: center;
+        padding: 30px;
+        background-color: rgb(2, 1, 1);
+        margin-top: 0px;
+        color: white;
+    }
+    article#content p{
+        text-indent: 51px;
+        color: white;
+        padding: 15px 20px;
+    }
+    div#paragrf:hover{ 
+        box-shadow: 0px -5px 40px black;
+      
+    }
+
+    /*footer*/
+    footer{
+        background-color: black;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+
+ 
+  
+
+
+
+
+
+
+

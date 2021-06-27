@@ -1,0 +1,73 @@
+
+/*Mudar direction of elements*/
+span{
+    font-size: 26px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+/*vertical align*/
+img#log{
+    width: 200px;
+    height: 200px;
+    vertical-align: bottom;
+}
+img#car{
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+}
+
+/*Decoration*/
+a{
+    text-decoration: none;
+
+}
+p#dois{
+    font-size: 25px;
+    color: red;
+    text-decoration: overline;
+}
+p#doiss{
+    font-size: 25px;
+    color: red;
+    text-decoration: line-through;
+}
+p#doisss{
+    font-size: 25px;
+    color: red;
+    text-decoration: underline;
+}
+
+/*Transfomatio*/
+p.umex{
+    font-size: 25px;
+    text-transform: lowercase;
+}
+p.doisex{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+p.treisex{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+/*Text spacing*/
+#indt{
+    font-size: 25px;
+    text-indent: 50px;
+}
+#letsp{
+    letter-spacing: 3px;
+}
+#spline{
+    line-height: 0.8;
+}
+#wosp{
+    word-spacing: 10px;
+}
+#whsp{
+    white-space: nowrap;
+}
+

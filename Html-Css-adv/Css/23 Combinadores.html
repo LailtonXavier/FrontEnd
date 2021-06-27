@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Combinação">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author"  content="Laailton da Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="23 Combinadores.css">
+    <title>Combinadores</title>
+</head>
+<body>
+    <h1>Combinadores</h1>
+    <p>Um combinador é algo que explica a relação entre os seletores</p>
+    <pre>
+        4 seletores:
+        seletor descendente (espaço)
+        seletor filho (>)
+        seletor irm]ao adjacente (+)
+        seletor irmão geral (~)
+    </pre>
+
+    <div id="descen">
+        <p>Seletor descendente, com espaço<p>
+    </div>
+    <hr>
+
+    <div id="child">
+        <p>É um filho primeiro</p>
+        <p> È um filho</p>
+        <section><p>Não é filho</p></section>
+    </div>
+    <hr>
+
+    <div id="adjacente">
+        <p>Irmão adjacente</p>
+    </div>
+        <p>Este sera pois esta fora e é um irmão do de cima</p>
+    <hr>
+
+    <div id="geral">
+        <p>Seletor geral de irmãos</p>
+        <p>Seleciona todos os elementos que são irmãos de um elementos</p>
+    </div>
+        <p>sera selecinado </p>
+        <p>sera selecionado pq é irmão</p>
+        <p>sera selecionado</p>
+
+    
+</body>
+</html>

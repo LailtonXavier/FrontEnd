@@ -1,0 +1,18 @@
+
+/*First line mudando a primeira linha*/
+pre::first-line{
+    color: #0e6d0a;
+    background-color: rgb(199, 183, 183);
+}
+/*First-letter*/
+pre::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+/*Before ou after*/
+h2::before{
+    content: url("naruto.gif");
+}
+h2#depois::after {
+    content: url("naruto.gif");
+}

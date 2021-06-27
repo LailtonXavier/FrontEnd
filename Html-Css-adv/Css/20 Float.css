@@ -1,0 +1,60 @@
+/*FLoat left or right*/
+h1{
+    text-align: center;
+}
+img#fotos{
+    width: 150px;
+    height: 100px;
+    float: right;
+    margin-left: 5px;
+}
+
+div#dentro{
+    border: 2px solid red;
+    float: left;
+}
+
+/*Clear:left, n permite nd ir ficar ao lado*/
+div#clears{
+    border: 1px solid red;
+    margin: 10px;
+    width: 300px;
+    padding: 5px;
+    height: 80px;
+    clear: left;
+    overflow: auto;
+}
+
+/*Clearfix*/
+img#ftcle{
+    width: 150px;
+    height: 100px;
+    float: left;
+    padding: 5px;
+}
+
+div#clearfix{
+    border: 2px solid red;
+    overflow: auto;
+    width: 350px;
+}
+
+/*Com after, usando essas linhas de codigo*/
+div#thebest::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div#thebest{
+    border: 1px solid green;
+    width: 300px;
+
+}
+img#ftaft{
+    padding: 6px;
+    float: left;
+    width: 100px;
+    height: 80px;
+}
+

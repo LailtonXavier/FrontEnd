@@ -1,0 +1,15 @@
+
+div{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ex1{
+    background-image: linear-gradient(to top, rgba(51, 131, 235, 0.548), rgb(53, 53, 53));
+    font-size: 40px;
+    text-shadow:  0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+

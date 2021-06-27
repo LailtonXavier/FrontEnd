@@ -1,0 +1,126 @@
+h1{
+    padding: 35px;
+    background-image: linear-gradient(#ddd, #888);
+    text-align: center;
+}
+
+.btn .button{
+    background-color: green;
+    border: 1px solid rgb(162, 229, 162);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+
+    transition-duration: 0.4s;
+    float: left;
+}
+.btn .button:not(:last-child){
+    border-right: none;/*evitar bordas duplas*/
+}
+.btn .button:hover{
+    background-color: rgba(0, 128, 0, 0.596);
+}
+.btn .button:visited{
+    background-color: black;
+}
+p{
+    margin: 30px 0;
+    clear: both;
+}
+
+/*Efeito animação do botão*/
+
+.btnStyle{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border:none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+
+    transition: all 0.5s ;
+    cursor: pointer;
+
+ 
+    outline: none;
+    
+}
+
+.btnStyle span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.btnStyle span:after{
+    content: '\00bb'; /*Aqui é a setinha do lado*/
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btnStyle:hover span{/*Aqui ja da o espaço da esquerda*/
+    padding-right: 25px;
+}
+.btnStyle:hover span:after{/*Aqui mostra as cetas*/ 
+    opacity: 1;
+    right: 0;
+}
+
+/*Estilizando a foto e o botão no meio*/
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+.container img{
+    width: 100%;
+    height: auto;
+}  
+.container .btnStyle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/*Efeito botão clicado*/
+.click{
+    position: absolute;
+    left: 560px;
+    top: 150px;
+
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(46, 121, 46);
+    border: none;
+    border-radius: 15px;
+
+    /*aqui esta o efeito*/
+    box-shadow: 0 9px #999;
+}
+.click:hover{
+    background-color: rgb(25, 107, 25);
+}
+.click:active{
+    background-color: rgb(25, 107, 25);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

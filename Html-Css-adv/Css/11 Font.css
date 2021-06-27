@@ -1,0 +1,48 @@
+
+
+/*Font family*/
+p#impc{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p#fam{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Font style*/
+pre#fontst{
+    font-style: italic;
+}
+
+/*Font weight*/
+p#fw{
+    font-weight: bold;
+}
+
+/*Font variant*/
+p#normal{
+    font-variant: normal;
+}
+p#small{
+    font-variant: small-caps;
+}
+
+/*Font size*/
+p#ftsm{
+    font-size: 0.875em;
+    color: red;
+}
+
+/*font resposivo*/
+p#vwf{
+    font-size: 0,5vw;
+}
+
+/*font google*/
+h2#fontgoo{
+    font-family: "sofia";
+    font-size: 20px;
+}
+    /*Font abreviada*/
+pre#expre{
+    font: italic small-caps bold 12px/30px Georgia, serif;
+}

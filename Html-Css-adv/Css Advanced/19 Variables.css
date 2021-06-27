@@ -1,0 +1,43 @@
+/*primeiro na rais cria as var com os valores*/
+
+:root{
+    --blue: #1e90ff;/*Variavel global*/
+    --white: #ffffff;
+}
+
+body{
+    background-color: var(--blue);
+}
+/*criando outra Var e mudando o tamanho*/
+.container{
+    --fontsize: 30px;
+}
+
+h2{
+    border-bottom:2px solid var(--blue);
+}
+
+.container{
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+    font-size: var(--fontsize);/*criando*/
+}
+button{
+    /* background-color: var(--white); */
+    /* --blue: #0000ff; override */
+    --button-blue: #0000ff; /*criando nova var*/
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+}
+
+/*Usando medie queries */
+@media screen and (min-width: 450px){
+    .container{
+        --fontsize: 50px;
+    }
+    :root{
+        --blue: rgba(53, 203, 253, 0.801);
+    }
+}

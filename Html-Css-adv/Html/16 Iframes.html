@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iframes</title>
+
+<style>
+    iframe{
+        height: 500px;
+        width: 500px;
+        border: 2px solid rgb(7, 7, 7);  
+    }
+    span{
+        color: yellow;
+        font-size: 20px;
+    }
+</style>
+
+    </head>
+    <body>
+        <h1>Iframes Html</h1>
+        <p>- Um iframe é usado para exibir uma pagina web dentro de uma
+            pagina web <br>
+            - O height e width usado para especificar o tamanho em pixels
+            - Pode remover as bordas: border none
+            - Pode alterar a cor das bordas
+            - Pode colocar um link com iframe que sera aberto no msm, para isso <br>
+                é preciso por um atributo name no iframe igual no target. 
+        </p>
+        <iframe src="01 index.html " frameborder="2px" name="iframe_a" title="iframe"></iframe>
+        <p><a href="02 Elementos.html" target="iframe_a">Elementos abrindo no iframe</a></p>
+        <hr>
+
+        <h2>Resumo do capitulo</h2>
+        <pre>
+            Um <span>iframe</span> é uma quadro imbutido
+            <span>src</span> define um caminho
+            sempre inclua <span>title</span>
+            <span>Height e width </span> é o tamanho
+            Use <span> Border:none</span> para remover a bordas
+            Use o name no iframe e um link puxando para abri no quadro imbutido
+        </pre>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Clique aqui </button>
+        
+            <p id="demo"></p>
+
+
+    </body>
+</html>

@@ -1,0 +1,63 @@
+* {/*Ficar td quadrado*/
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    background-color: rgb(223, 218, 210);
+    margin: 5px;
+    padding: 5px;
+}
+
+/*borda das galeria*/
+div.gallery{
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover{/*qmd passar o mouse*/
+    border: 1px solid #777;
+}
+
+div.gallery img{ /*as galerias img 100% para ficar melhor qualidade*/
+    width: 100%;
+    height: auto;
+}
+
+div.desc{ /*Descrição*/
+    background-color: rgb(223, 218, 210);
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+.responsive{/*width: 24% pocento responsivo, e o espaçamento */
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+/*Responsive varias telas*/
+@media only screen and (max-width: 700px){
+    .responsive{
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive{
+        width: 100%;
+    }
+}
+
+.clearflix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#content{
+
+    padding: 6px;
+}
+

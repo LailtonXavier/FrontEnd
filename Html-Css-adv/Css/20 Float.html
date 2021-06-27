@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Float">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Lailton">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="20 Float.css">
+    <title>Float</title>
+</head>
+<body>
+    <h1>Float</h1>
+    <p><img id="fotos" src="Fotos/image.jpg" alt="">
+        Uma propriedade define como um elemento deveria flutuar,  
+        Uma propriedade define como um elemento deveria flutuar  
+        Uma propriedade define como um elemento deveria flutuar  <br>
+    valores: left, right, none, inherit </p>
+    <hr>
+
+    <h2>Clear</h2>
+    <p>Quais elementos podem voar no espaço linpo</p>
+    <pre>
+        propriedades:
+        none    =   permiti elementos voandos
+        left    =   nenhum elemento permitido voar no lado esquerdo
+        right   =   nenhum elementos permiti flutuar no lado direito
+        both    =   não pode flutuar em nenhum lado
+        inherit =   herdado
+    </pre>
+    <div id="dentro">
+        div 1 dentro 
+    </div>
+    <div id="clears">
+        Se o elemento for flutuado para esquerda vc deve limpa a esquerda para n pode flutuar <br>
+        limpe para nenhum elemento flutuar ao lado, esquerdo, direito, ambos lados
+    </div>
+    <hr>
+
+    <h2>Clearfix</h2>
+    <div id="clearfix">
+        <img id="ftcle" src="Fotos/image.jpg" alt="fotos">
+    <p>Se uma div for pequena mais do que a foto, vc pd color: <br>
+    overflow para corregir, permitindo o msm tamanho da fotoo</p>
+    </div>
+    <hr>
+
+    <h1><strong>A forma mais usada e segura do clearfix</strong></h1>
+    <div id="thebest">
+        <img id="ftaft" src="Fotos/image.jpg" alt="foto">
+        ::after, content: "" = ele limpa o conteudo em branco <br>
+        clear: both ele limpa para ambos lados 
+        display table
+    </div>
+    
+</body>
+</html>

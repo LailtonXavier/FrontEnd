@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+/*H1 e paragrafo RGBA*/
+h1{
+    color: blueviolet;
+}
+p{
+    color: rgb(240, 234, 240);
+}
+pre{
+    background-color: rgb(18, 145, 150);
+    font-size: 17px;
+    color: rgb(240, 234, 240);
+    font-family: cursive;
+
+}
+#rgb{
+    background-color:rgba(238, 224, 238, 0.5);
+}
+#hex{
+    background-color: #b4b4b4;
+}
+#hsl{
+
+    background-color: hsl(0, 0%, 50%);
+}

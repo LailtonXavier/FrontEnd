@@ -1,0 +1,148 @@
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+}
+body{
+    background-color: rgb(42, 40, 40);
+}
+h1{
+    padding: 40px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    /*centralizar*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*Filter*/
+.gray{
+    filter: grayscale(100%);
+}
+
+.gallery{ 
+    /*Overlay position: relative*/
+    position: relative;
+
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 4px; /*50% fica circulo*/
+    padding: 5px;
+    
+
+    background-color: rgb(209, 202, 202);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 252, 252, 0.89);
+    margin-bottom: 25px;
+}
+.desc{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/*Overlay*/
+/* de baixo para cima*/
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease-in-out;
+}
+.gallery:hover .overlay{
+    height: 100%;
+}
+
+/*de cima para baixo*/
+.overlay2{
+    bottom: 100%;
+}
+.gallery:hover .overlay2{
+    bottom: 0;
+    height: 100%;
+}
+
+/*lado left to right*/
+.overlay3{
+    width: 0;
+    height: 100%; /*vai vim 100% */
+}
+.gallery:hover .overlay3{
+    width: 100%;
+}
+
+/*lado right to left*/
+.overlay4{
+    left: 100%;
+    width: 0;
+    height: 100%;
+}
+.gallery:hover .overlay4{
+    width: 100%;
+    left: 0;
+}
+/*tela full*/
+.overlay5{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.gallery:hover .overlay5{
+    opacity: 1;
+}
+.text{
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    overflow: hidden;
+    /*center text*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+
+
+.responsive{
+    padding: 3px 6px;
+    float: left;
+    width: 19.99999%;
+}
+
+@media only screen and (max-width: 1063px){
+    .responsive{
+        width: 33%;
+    }
+   
+}
+
+@media only screen and (max-width: 800px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+      .responsive{
+          width: 100%;
+      }
+  }
+

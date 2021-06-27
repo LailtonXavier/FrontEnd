@@ -1,0 +1,71 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+
+    <style>
+       
+        p#ex{
+            width: 60%;
+            padding:5px ;
+            float: left;
+        }
+
+        aside{
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 1px;
+            margin-bottom: 10px;
+            float: left;
+            background-color: lightgray;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+        /* Para Mobile  */
+        @media screen and (max-width: 500px) {
+            p, p#ex, aside {
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Nav</h1>
+    <p>Define um conjunto de links de navegação</p>
+    <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </nav>
+    <hr>
+
+    <h2>Aside</h2>
+
+    <p id="ex">Texto so de exemplo para ocupar espaço Texto so de exemplo para ocupar espaço Texto so de exemplo para ocupar espaço Texto so de exemplo para ocupar espaço Texto so de exemplo para ocupar espaço Texto so de exemplo para ocupar espaço</p>
+
+    <aside>
+            <p >Seria uma barra lateral, definindo algum outro conteudo <br>
+    deve ser indiretamente relacional ao conteudo curdundante</p>
+    </aside>
+    
+
+    <article>
+    <h2>Figure and figcaption</h2>
+    <p><strong>figure</strong> conteudo: imagen, diagramas, fotos,codigos, etc.</p>
+    <p><strong>figcaption </strong> legenda para um figure </p>
+
+    <figure>
+        <img src="Fotos/img_car.jpg" alt="car"> 
+        <figcaption>Só carro potente</figcaption>
+    </figure>
+    </article>
+
+
+
+
+</body>
+</html>

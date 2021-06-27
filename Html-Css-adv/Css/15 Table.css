@@ -1,0 +1,41 @@
+/*Border table, width heigth*/
+table, th, td{
+    border: 2px solid red;
+    border-collapse: collapse; /*Tira a segunda borda*/
+    
+}
+/*width e height*/
+table{
+    width: 100%;
+
+}
+th{
+    height: 50px;
+}
+/* Text align, vertical align*/
+td{
+    text-align: center;
+    height: 40px;
+}
+td#vertic{
+    vertical-align: bottom;
+}
+/*padding, border-bottom*/
+th, td{
+    padding: 10px;
+    border-bottom: 5px dotted green;
+}
+/*Hover tr*/
+tr:hover{
+    background-color: rgba(163, 147, 133, 0.753);
+}
+
+/*Nth*/
+tr.nthch:nth-child(even){
+    background-color: rgba(74, 228, 43, 0.973);
+}
+
+/*Table responsivo: overflow-x: auto*/
+div{
+    overflow-x: auto;
+}

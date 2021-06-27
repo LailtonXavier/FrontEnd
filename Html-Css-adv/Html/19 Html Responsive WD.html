@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web Desing">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lailton da Silva">
+
+    <title>Responsive</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body{
+            margin: 4px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /*header */
+        header{
+            text-align: center;
+            background-color: #928c8c;
+            padding: 15px;
+        }
+
+        /*Navegaçao*/
+        nav{
+            background-color: blueviolet;
+            width: 20%;
+            height: 213px;
+            float: left;
+            padding: 20px;
+
+        }
+        nav ul{
+            list-style-type: disc;
+            padding: 5px;
+        }
+
+        section{
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+            top:16px;
+
+        }
+
+        article{
+            background-color: lightblue;
+            float: left;
+            width: 20%;
+            padding: 5px;
+            margin-bottom: 50px;
+            
+        }
+
+        footer{
+            background-color: #f1f1f1;
+            text-align: center;
+            font-size: 12px;
+            padding: 10px;
+            bottom: 0;
+        }
+
+        /*Tablet*/
+        @media only screen and (max-width: 600px) {
+           nav, section, article{
+               width: 100%;
+           }
+        }
+
+        @media only screen and (max-width: 100px) {
+            nav{
+              width: 100%;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>  
+        <h1>Web Design Responsive</h1> 
+     </header>
+
+     <nav>
+         <ul>
+             <li><a href="#">Produtos</a></li>
+             <li><a href="#">Serviços</a></li>
+             <li><a href="#">Sobre</a></li>
+             <li><a href="#">Portifolio</a></li>
+         </ul>
+     </nav>
+
+     <section>
+         <h2>Clarear</h2>
+         <p>Cascas de limão ou laranja
+            Esfregue a parte interna (o lado branco) das cascas
+             de limão ou laranja nos dentes por pelo menos dois minutos. 
+             As substâncias contidas nas cascas auxiliam no clareamento. 
+             Use no máximo duas vezes por semana, enxágue e escove bem os dentes após, 
+            para tirar da boca qualquer resquício de ácido.</p>
+     </section>
+    
+     <article>
+         <h2>Produtos e Serviços</h2>
+         <p>Produto 1</p>
+         <p>Produto 2</p>
+         <p>Produto 3</p>
+     </article>
+    
+     <footer>
+         <p>Desenvolvido para teste e estudos na W3Sxhool.com so vapo pai<br> Lailton da Silva <br>
+        contato: <a href="mailto:exampli@gmail.com">lailton</a></p>
+     </footer>
+    </body>
+</html>

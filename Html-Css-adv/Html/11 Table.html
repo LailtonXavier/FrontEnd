@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabelas</title>
+
+        <style>
+            table, th, td{
+                border: 1px dotted #e20000;
+                padding: 10px;
+                margin: 1px;
+                border-collapse:  collapse;
+                border-spacing: 10px;
+
+            }
+            table{
+                width: 50%;
+            }
+            th{
+                text-align: left;
+            }caption{
+                font-size: 19px;
+                color: darkblue;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            #exemplo{
+                width: 50%;
+                background-color: gray;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Tabelas simples</h1>
+        <table >
+            <tr>
+                <th >Primeiro nome</th>
+                <th colspan="2">Ultimo nome</th>
+                <th colspan="2">Idade</th>
+
+            </tr>
+            <tr>
+                <td>Lailton</td>
+                <td>Silva</td>
+                <td>Xavier</td>
+                <td>20 anos</td>
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>Jasiane</td>
+                <td>Silva</td>
+                <td>39</td>
+            </tr>
+
+        </table>
+        <p><strong>< TD ></strong> são conteines de dados que podem armazenar imagens, listas, 
+        outras tables etc <br>
+    - Usamor Padding para o preenchimento da Tabelas <br>
+- Usamos uma borda tambem <br>
+- Collapsed border, tira as bordas do lado deixa so uma <br>
+- Border spacing, espaço entre as celulas ( se estiver com o border collapse n vai pegar) <br>
+- colspan, Celula que abrange muita celular <br>
+- rowspan, espaçamento de linha <br>
+- caption, legenda da tabela <br>
+- id, usando para editar tabela por vez</p>
+        <hr>
+        <table id="exemplo">
+            <caption>Legenda na tebela com caption </caption>
+            <tr>
+                <th>Nome:</th>
+                <td>Bil</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th> <!--ESPAÇAMENTO DE LINHA-->
+                <td>423423423</td>
+            </tr>
+            <tr>
+                <td>45545</td>
+            </tr>
+        </table>
+
+
+
+        
+    </body>
+</html>

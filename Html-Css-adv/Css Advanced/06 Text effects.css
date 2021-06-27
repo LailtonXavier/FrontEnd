@@ -1,0 +1,36 @@
+
+p.pclip{
+    white-space: nowrap;
+    width: 150px;
+    border: 1px solid red;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+p.pellipsis{
+    white-space: nowrap;
+    width: 150px;
+    border: 1px solid red;
+    overflow: hidden;
+    text-overflow: ellipsis; /*forma xorreta, ele corrigi*/
+}
+p.pclip:hover, p.pellipsis:hover{
+    overflow: visible;
+}
+
+.quebrarpal{
+    width: 150px;
+    border: 1px solid red;
+    padding: 8px;
+    word-wrap: break-word; /*corrigi o text*/
+}
+
+.ex{
+    writing-mode: horizontal-tb;
+}
+.ex span.ve{
+    writing-mode: vertical-rl;
+}
+span.sp{
+    writing-mode: vertical-rl;
+}

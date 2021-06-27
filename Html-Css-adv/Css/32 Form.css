@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(168, 156, 156);
+}
+
+h1{
+    text-align: center;
+}
+div{
+    width: 400px;
+    height: auto;
+    margin: 30px auto;
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: center; 
+}
+
+input[type=text], input[type=email], input[type=password]{
+    background-color: black;
+    padding: 6px 12px;
+    margin: 4px 0;
+    border: 3px solid rgb(153, 145, 142);
+    /*animação*/
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+   border: 3px solid #555;
+   
+}

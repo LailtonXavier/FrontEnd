@@ -1,0 +1,153 @@
+body{
+    width: 80%;
+    margin: 30px auto 30px ;
+    box-shadow: 5px 5px 5px 50px black;
+}
+
+/*Primeiro bloco*/
+.dropdown{
+    position: relative; /*Usado qnd queremos colocar algo abaixo ai usar 
+                        no outro elemento "absolute" */
+    display: inline-block;
+}
+
+/*Conteudo que vai descer criando outro blocoa*/
+.dropdown-content{
+    display: none;
+    position: absolute; /*relatibo ao de cima*/
+    background-color: #ddc7c7;
+    min-width: 160px; /*largura do bloco*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*Menu suspenso*/
+article{
+    margin: 100px 5px;
+}
+/*Botão*/
+.dropbtn{
+    background-color: #27bcd6;
+    color:white;
+    padding: 16px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.menu-suspenso{
+
+    position: relative;
+    display: inline-block;
+}
+.menu-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*Links dentro do dropdown*/
+.menu-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/*mudar qnd passar o mouse no link*/
+.menu-content a:hover{
+    background-color: #f1f1f1
+
+}
+/*mostrar o dropdown menu sobre Hover*/
+.menu-suspenso:hover .menu-content{
+    display: block;
+}
+/*mudar cor do botão qnd deixar o mouse*/
+.menu-suspenso:hover .dropbtn{
+    background-color: #3e3e3e
+}
+
+/*Flutuar esquerda e direita*/
+#article2{
+    height: 100px;
+}
+.dropleftandright{
+    position: relative;
+    display: inline-block;
+}
+
+.dropbutto{
+    background-color: lawngreen;
+    color: white;
+    padding:16px ;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.rightandleft-content{
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    right: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:0 ;
+}
+
+.rightandleft-content a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding:12px 14px ;
+}
+
+.rightandleft-content a:hover{
+    background-color: #d6cdcd;
+}
+
+.dropleftandright:hover .rightandleft-content{
+    display: block;
+}
+.dropleftandright:hover .dropbutto{
+    background-color: #3e3e3e;
+}
+
+
+/*Estilizando uma imagem*/
+#article3{
+    height: 500px;
+
+}
+
+.drop-imgs{
+    position: relative;
+    display: inline-block;
+}
+
+.img-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-imgs:hover .img-content{
+    display: block;
+}
+.terra{
+    text-align: center;
+    font-size: 20px;
+}
+

@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(182, 182, 182, 0.747);
+    margin: 1cm;
+}
+
+h1{
+    text-align: center;
+}
+
+#abrev{
+    border: 3px double red ;
+    margin: 10px 40px 30px 13px;
+    padding: 10px;
+}
+
+/*Elemento Herdado*/
+
+#herdado{
+    border: 2px solid red;
+    margin-left: 100px;
+    padding: 10px;
+}
+#herda{
+margin: inherit;
+}
+
+

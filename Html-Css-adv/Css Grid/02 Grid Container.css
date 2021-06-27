@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+header{
+    text-align: center;
+    background-color: rgb(112, 99, 99);
+    color: white;
+    padding: 10px;
+    display: block;
+}
+p{
+    border-bottom: 3px dotted rgb(240, 233, 233);
+    display: inline;
+}
+h2{
+    padding: 5px;
+     
+}
+pre{
+    text-align: left;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/*Usando tbm Align-content*/
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    align-content: end ;
+    background-color: rgb(154, 80, 223);
+    padding: 10px;
+}
+
+.templateColumns{
+    background-color: rgb(39, 149, 212);
+    text-align: center;
+    padding: 20px 5px;
+    font-size: 20px;
+}
+
+.gridRows{
+    grid-template-rows: 80px 100px 120px; /* uma altura para cada linha */
+}
+
+.JustifyContent{
+    /* justify-content: space-around; tudo no centro */
+    /* justify-content: space-between;  alinhado os da ponta */
+    justify-content: space-evenly; /*Tudo no meio */
+    /* justify-content: center; Tudo no meio bem juntos */
+    /* justify-content: end; Tudo na direita */
+    /* justify-content: start; Tudo na esquerda */
+    align-content: center;
+
+}

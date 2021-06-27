@@ -1,0 +1,35 @@
+/*Tipo de lista, cores e padding*/
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    background: #3399ff;
+    padding: 20px;
+    border-left: 3px solid red;
+}
+/*cores*/
+ul li{
+    background: #cce5ff;
+    margin: 5px;
+}
+
+/*Cores*/
+ol{
+    list-style-type: upper-latin; 
+    background: #ff99ff;
+    padding: 20px;
+}
+ol li{
+    background: #cce5ff;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+/*Imagem como lista */
+ul{
+    list-style-image: url('sqpurple.gif');
+}
+
+/*Abreviação*/
+#abre{
+    list-style: none outside;
+}

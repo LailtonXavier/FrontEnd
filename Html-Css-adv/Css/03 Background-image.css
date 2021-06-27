@@ -1,0 +1,10 @@
+body{
+    /*background-image: url(image.jpg) ;
+    background-repeat:  no-repeat;
+    background-size: 100%;   
+    background-position:right top; 
+    background-attachment: fixed;
+       Abreviar tudo se chama:
+        Background shorthand             */
+    background: #fff url(Fotos/image.jpg) no-repeat fixed 100% ;
+}

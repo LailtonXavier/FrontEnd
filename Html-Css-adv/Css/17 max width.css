@@ -1,0 +1,23 @@
+h1{
+    margin: auto;
+    text-align: center;
+}
+
+/*500*/
+#div1{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(119, 138, 101);
+    height: 50px;
+    padding: 10px 0px;
+}
+
+#div2{
+    max-width: 500px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    background-color: cornflowerblue;
+    padding: 10px 0px;
+}

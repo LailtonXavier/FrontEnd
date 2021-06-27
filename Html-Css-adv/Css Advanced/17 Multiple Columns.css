@@ -1,0 +1,16 @@
+div{
+    border: 1px solid blueviolet;
+    margin: 5px 8px;
+    padding: 8px;
+}
+p{
+    /* column-count: 3;
+    column-width: 140px; 
+    columns faz a msm coisa
+    */
+    columns: 140px 3;
+    column-gap: 20px;
+    column-rule: 1px solid #999;
+    column-span: all;
+ 
+}

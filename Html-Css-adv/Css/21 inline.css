@@ -1,0 +1,32 @@
+
+div{
+    border: 2px solid red;
+    padding: 20px;
+
+}
+
+p#in span{
+    /* altura e largura ja não funcionam no Display: inline */
+    display: inline;
+    /*width: 100px;
+    height: 100px;*/
+    background-color: yellow;
+    font-size: 20px;
+}
+
+p.inblo span{
+    /* altura r largura funciona no Display: inline-block */
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    font-size: 20px;
+}
+
+p#bl span{
+    background-color: yellow;
+    display: block;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+}

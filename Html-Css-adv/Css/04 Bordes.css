@@ -1,0 +1,140 @@
+body{
+    margin:  1mm;
+}
+strong{
+    color: yellow;
+    font-size: 40px;
+    background-color: violet;
+}
+
+p.pont{
+    border-style: dotted;
+}
+p.trac{
+    border-style: dashed;
+}
+p.solid{
+    border-style: solid;
+}
+p.dupla{
+    border-style: double;
+}
+p.groove{
+    border-style: groove;
+}
+p.ridge{
+    border-style: ridge;
+}
+p.inset{
+    border-style: inset;
+}
+p.outset{
+    border-style: outset;
+}
+p.none{
+    border-style: none;
+}
+p.hidden{
+    border-style: hidden;
+}
+p.mix{
+    border-style: double inset dotted;
+}
+
+/*Larguras das bordas*/
+p.one{
+    border-style: solid;
+    border-width: 2px;
+}
+p.two{
+    border-style: dotted;
+    border-width: thick;
+}
+p.four{
+    border-style: double;
+    border-width: thin;
+
+}
+p.five{
+    border-style: inset;
+    border-width: medium;
+}
+p.six{
+    border-style: outset;
+    border-width: 23px;
+}
+
+/*Bordas especificas*/
+
+p.on{
+    border-style: double;
+    border-width: 5px 20px; /*5px superior e infer,ior
+    20px nas laterais: esquerda e direita*/
+}
+p.tw{
+    border-style: double;
+    border-width: 20px 5px; /* 5px superior e inferios
+    20px nas laterais: esquerda e direita*/
+}
+p.th{
+    border-style: double;
+    border-width: 25px 10px 4px 34px;
+    /* superior, direita, inferior e esquerda*/
+}
+
+/*Cores nas bordas*/
+
+p.cor{
+    border-style: ridge;
+    border-color: maroon;
+}
+p.core{
+    border-style: double;
+    border-width: 10px 20px;
+    border-color: red green blue yellow;
+}
+
+/*Bordas individuais*/
+p.indi{
+    border-top-style: dotted;
+    border-right-style: double;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-width: 20px 20px;
+}
+
+/*Shorthand apreviação*/
+span{
+    border: 5px dotted red;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+/*Propriedade individual*/
+p.indileft{
+    border-left: 6px solid red;
+    background-color: rgb(27, 190, 255);
+}
+p.indibotton{
+    border-bottom: 6px solid red;
+    background-color: rgb(27, 190, 255);
+}
+p.inditop{
+    border-top: 6px solid red;
+    background-color: ligrgb(27, 190, 255)htgrey;
+}
+
+/*Bordas redonda*/
+p.radius{
+    border: 6px solid red;
+    border-radius: 4px;
+}
+p.radiuss{
+    border: 5px solid red;
+    border-radius: 6px;
+}
+p.radiusss{
+    border: 5px solid red;
+    border-radius: 10px;
+}

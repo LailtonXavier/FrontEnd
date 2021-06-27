@@ -1,0 +1,18 @@
+
+div{
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    margin: 6px 0px;    
+    padding: 25 px;
+
+}
+.sem{
+}
+
+.com{
+    box-sizing: border-box;
+}
+.com2{
+     box-sizing: border-box;
+}

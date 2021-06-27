@@ -1,0 +1,26 @@
+
+
+div{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid red;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rx{
+    transform: rotateX(150deg);
+}
+#ry{
+    transform: rotateY(170deg);
+}
+#rz{
+    transform: rotateZ(90deg);
+}
+#rz:hover{
+    transform: rotateZ(180deg);
+}

@@ -1,0 +1,33 @@
+p:first-child{
+    color:red;
+}
+
+#estados{
+    text-decoration: none;
+    }
+#estados:hover{
+        color: hotpink;
+    }
+#estados:link{
+        color: green;
+    }
+#estados:active{
+            color: yellow;
+    }
+
+    /*passar mouse e mostrar*/
+p#pass {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+    font-size: 20px;}
+    
+div#novopar:hover p#pass {
+    display: block;
+}
+
+/*lang*/
+q:lang(no){
+    quotes: "^^" "^^";
+}
+

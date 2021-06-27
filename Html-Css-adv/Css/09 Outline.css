@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(180, 178, 175, 0.781);
+}
+
+h1{
+    margin: 5px;
+    padding: 5px 10px;
+    border:3px solid red;
+    outline-style: dotted;
+    outline-color: rgb(189, 255, 6);
+    outline-width: 4px;
+}
+
+/* Abreviação Outline */
+h2{
+    margin: 10px;
+    padding: 5px 10px;
+    border: 3px solid red;
+    outline: 4px double rgb(115, 197, 7);
+}
+
+p{
+    margin: 5px;
+    padding: 5px 10px;
+    border: 3px solid rebeccapurple;
+    outline: 5px dotted rgb(255, 115, 0);
+}
+pre{
+    padding-top: 5px;
+    border: 4px solid gray;
+    outline: 3px groove blue;
+}
+
+.espac{
+    margin: 30px;
+    border: 3px solid black;
+    outline: 4px solid red;
+    outline-offset: 15px;
+}

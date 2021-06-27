@@ -1,0 +1,98 @@
+
+@keyframes change {
+    /* from { background-color: red;}
+    to {background-color: yellow;} */
+    0% {background-color: red; color: white;}
+    25% {background-color: yellow; color: black;}
+    50% {background-color: black; color: white;}
+    100% {background-color: greenyellow; color: red;}
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    color: white;
+    padding: 5px;
+   background-color: red;
+
+    /*center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#sim{
+    /*ativar animação*/ 
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+    0% {background-color: red; left: 0px; top: 0px}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;} 
+    75% {background-color: paleturquoise; left: 0px; top: 200px;}
+    100% {background-color: purple; left: 0px; top: 0px;}
+}
+div#mov{
+    position: relative;
+    animation-name: move;
+    animation-duration: 4s;
+    /*conta numeros q vai rodar*/
+    animation-iteration-count: 3; 
+    /*propriedade animação frente, tras ou em ciclos
+        reverse, normal, alternate, alternate-reverse */
+    animation-direction: alternate-reverse; 
+}
+article{
+    width: 800px;
+    padding: 5px;
+    border: 1px solid red;
+    margin: 0px auto;
+}
+.tds, .td{
+    margin: 5px auto;
+    
+}
+@keyframes um{
+    0% {background-color: rosybrown; left: 0px; top: 0;}
+    25% {background-color: rgb(64, 246, 19); left: 350px; top: 0px;}
+    50% {background-color: rosybrown; left: 350px; top: 0;} 
+}
+.tds{
+    background-color: black;
+    color: white;
+    position: relative;
+    animation-name: um;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+@keyframes doi{
+    0% {background-color: rosybrown; right: 0px; top: 0;}
+    25% {background-color: rgb(64, 246, 19); right: 350px; top: 0px;}
+    50% {background-color: rosybrown; right: 350px; top: 0;} 
+}
+.td{
+    background-color: rgb(175, 93, 93);
+    color: white;
+    position: relative;
+    animation-name: doi;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    
+}
+/* td junto*/
+
+@keyframes facil{
+    0% {background-color: rosybrown; left: 0px; top: 0px;}
+    25% {background-color: rgb(64, 246, 19); left: 350px; top: 0px;}
+    50% {background-color: rgb(26, 9, 9); left: 350px; top: 350px;} 
+    75% {background-color: rgb(4, 217, 255); left: 0px; top: 350px;} 
+    100% {background-color: rgb(222, 4, 230); left: 0px; top: 0px;} 
+
+}
+#novo{
+    background-color: rgb(148, 138, 148);
+    position: relative;
+    animation: facil 5s  infinite ;
+}

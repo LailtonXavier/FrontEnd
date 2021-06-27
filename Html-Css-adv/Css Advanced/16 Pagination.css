@@ -1,0 +1,49 @@
+/*Breadcrumb*/
+ul.breadcrumb{
+    padding: 8px 16px;
+    list-style-type: none;
+    background-color: #eee;
+}
+ul.breadcrumb li{
+    display: inline;
+}
+ul.breadcrumb li a{
+    color: green;
+    text-decoration: none;
+}
+ul.breadcrumb li+li::before{
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+
+/*Paginations*/
+.center{
+    text-align: center;
+}
+.pagination{
+    display: inline-block;
+}
+
+.pagination a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+
+    box-shadow: 0 5px #888;
+}
+
+.pagination a:active{
+    background-color: #999;
+    box-shadow: 0 2px #999;
+    transform: translateY(4px);
+}
+.pagination a:hover{
+    background-color: #ddd;
+
+}

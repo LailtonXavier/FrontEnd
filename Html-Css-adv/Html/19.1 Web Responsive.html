@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web responsive</title>
+
+    <style>
+        /*Media cosultas*/
+        * {
+            box-sizing: border-box; /*Ele fixa o width e height*/
+        }
+        /*Colunas dos conteudos*/
+       
+        .left {
+          background-color:#2196F3;
+          padding:20px;
+          float:left;
+          width:20%; /* The width is 20%, by default */
+
+          
+        }
+       
+        .main {
+
+          background-color:#f1f1f1;
+          padding:20px;
+          float:left;
+          width:60%; /* The width is 60%, by default */
+        }
+        
+        .right {
+
+          background-color:#4CAF50;
+          padding:20px;
+          float:left;
+          width:20%; /* The width is 20%, by default */
+        }
+        /* Se Media de cunsulta for menoor 800 tudo fica menor, 
+        ou seja, tudo fica 100% para celular, como pilha*/
+        @media screen and (max-width:800px) {
+            .left, .main, .right {
+                width: 100%;
+            }
+        }
+       body{
+           margin: 10px;
+       }
+        img{
+            
+            max-width: 100%;
+        }
+        #tam{
+            font-size:5vw ;
+        }
+        #tamp{
+            font-size: 2.5vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem responsiva</h1>
+    <p>Usando a propriedade do CSS <mark>width = 100%</mark> , ela ira ficatr automatica, 
+        pegando toda o tamanho da pagina
+    </p>
+    <p>
+        Se usar <mark>Max- width = 100%</mark>  quando atingida o cem porcento, n ira crescer
+         ficarar no mesmo tamanho
+    </p>
+    <img src="Fotos/img_girl.jpg" alt="menina">
+    <hr>
+
+    <h2>Varias imagens dependendo do tamanho</h2>
+    <picture>
+        <source srcset="Fotos/fotos.jpg" media="(max-width: 500px)"> 
+            <source srcset="Fotos/img_car.jpg" media="(max-width: 1500px)"> 
+                <source srcset="Fotos/o grito.jpg">
+                    <img src="Fotos/pc.jpg" alt="pc">
+
+    </picture>
+    <hr> 
+    
+    <h2 id="tam">Tamanho texto responsivo</h2>
+    <p id="tamp">pode ser definido como "vw": largura da janela de visualização <br>
+    ficando o tamanho da tela do navegador <br>
+    Exemplo em pratica ...</p>
+    <hr>
+
+    <h2>Media query/consultas de midia</h2>
+    <p>os três elementos div abaixo serão 
+        exibidos horizontalmente em telas grandes e empilhados 
+        verticalmente em telas pequenas:</p>
+
+        <div class="left">
+            <p>Menu esquerdo</p>
+        </div>
+        <div class="main">
+            <p>Comteudo principal</p>
+        </div>
+        <div class="right">
+            <p>Conteudo da direita</p>
+        </div>
+
+   
+
+    
+</body>
+</html>

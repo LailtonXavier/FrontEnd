@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(17, 15, 15);
+}
+ 
+
+.container{
+  /*container */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh; /* 20 top 70 conteudo 10 fim */
+  /* grid-gap: 20px; */
+
+   /* temos 4 linhas*/
+   /* tudo que foi feito abaxo resumido com area*/
+   /* header so uma coluna é so colocar um ponto em seu nome: header .  */
+   grid-template-areas: " header header"
+                                    "main aside"
+                                    "foo foo";
+
+
+}
+
+
+header{ 
+  background: rgb(85, 85, 85);
+  /* linhas virtuais inicio, meio  e fim*/
+  
+   /*grid-column-start: 1;*/
+  /*grid-column-end: 3; /* termina na linha 3 horizontal*/
+  /*podemos resumir assim*/
+    /* grid-column: 1/3; */
+
+  /*4 linhas virtual vertical*/
+  /* grid-row-start: 3; */
+  /* grid-row-end: 4; */
+  /* grid-row: 3/4; */
+
+  /*pegando o grid area*/
+  grid-area: header;
+
+  /* da pra colocar o footer no header e vise versa*/
+}
+
+main{
+  background: rgb(56, 165, 42);
+
+  /* grid-column-start: 1; */
+  /* grid-column-end: 2; */
+  /* resumindo */
+  /* grid-column: 1/2; */
+
+  grid-area: main;
+}
+
+aside{
+  background: rgb(165, 142, 42);
+
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+  /* resumindo */
+  /* grid-column: 2/3; */
+
+  grid-area: aside;
+}
+
+footer{
+  background: rgb(207, 90, 162);
+
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3; linha virtual */
+  /* resumindo */
+  /* grid-column: 1/3; */
+
+  grid-area: foo;
+
+}
+

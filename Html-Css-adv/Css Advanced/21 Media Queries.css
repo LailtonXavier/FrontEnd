@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(to left,#444, #ddd, #444);
+}
+.row{
+    overflow: auto;
+}
+#main{
+    margin-left: 4px;
+}
+#left{
+    float: none;
+    width: auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+li{
+    background-color: rgb(16, 207, 221);
+    padding: 2px ;
+    margin: 4px;
+    border-radius: 15px 0px 15px 0px;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+}
+#main{
+    background-color: #999;
+    padding: 40px;
+    text-align: center;
+}
+@media screen and (min-width: 490px){
+    #left{
+        width: 200px;
+        float: left;
+    }
+    #main{
+        margin-left: 216px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="description" content="Display">
+        <meta name="keywords" content="HTML,CSS, JS">
+        <meta name="author" content="Lailton">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="16 display.css">
+        <title>Display</title>
+
+    </head>
+    <body>
+        <h1>Layout - propriedade de exibição</h1>
+        <p>A propriedade <q>Display</q> é muito importante para 
+        controlar o layout</p>
+        <p>O valor padrao de cada elemento Html tem um valor padrão 
+            <q>block</q> ou <q>inline</q>
+        </p>
+
+        <li><a href="#">Site</a></li>
+        <li><a href="#">Outro Site</a></li>
+        <li><a href="#">Mais um</a></li>
+        <hr>
+
+        <p>Um elemento com: Display block, n pode ter 
+            outros elementos de bloco dentro dele
+        </p>
+        <p>Display: block = quebra <span> QUEBROU </span>linha ou deixa 100% de largura</p>
+        <a id="all" href="#">pegou 100% da largura</a>
+        <hr>
+
+        <h2 class="flip" onclick="aparecer()" ondblclick = "duas()" >
+            Clique para aparecer mais informações
+        </h2>
+
+        <div id="painel">
+        <p>display: none e display: hidden esconde o elemento <br>
+        porem afetara o espaço, ou seja, ocupara o espaço ainda <br>
+    visibility:hidden = tbm escondo o elemento</p>
+            </div>
+
+            <script>
+
+               let parece = document.getElementById('painel')
+
+                function aparecer(){
+                    parece.style.display = 'block'
+                }
+                function duas(){
+                    parece.style.visibility = 'hidden'
+                 }
+
+            </script>
+
+    </body>
+</html>

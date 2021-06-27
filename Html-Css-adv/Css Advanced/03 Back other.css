@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;}
+#example1{
+    background: url('Fotos/woman-1318903_640.png') right  no-repeat,
+    url('Fotos/flowers-2058090_640.png') left bottom no-repeat,
+    url('Fotos/fundo\ blue.jpg') center no-repeat  ;
+    padding: 50px;
+    background-size: 200px, 300px, 100%;
+    color: rgb(0, 0, 0);
+}

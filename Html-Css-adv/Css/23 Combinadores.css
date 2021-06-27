@@ -1,0 +1,19 @@
+
+/* Descendente*/
+#descen p{
+    background-color: greenyellow;
+}
+
+/*Child*/
+#child > p{
+    background-color: greenyellow;
+}
+
+/*Adjacente*/
+#adjacente + p{
+    background-color: greenyellow;
+}
+/*Seletor geral*/
+#geral ~ p{
+    background-color: greenyellow;
+}

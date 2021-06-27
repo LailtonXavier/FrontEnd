@@ -1,0 +1,39 @@
+
+/* Comentario no css*/
+body {
+    background-color: lightblue;
+  }
+  
+
+
+h1{
+    text-align: center;
+    color: springgreen;
+    background-color: rgb(2, 0, 0);
+}
+h2, h3{
+    text-align: center;
+    color: seagreen;
+    background-color: #000000;
+}
+p {
+color: rgb(189, 138, 255);
+text-align: left;
+background-color: #ffffff;
+
+}
+pre{
+ background-color: #ffffff;
+}
+#seletor{
+text-align: right;
+color: slateblue;
+}
+.seletorclass{
+ text-align: center;
+ color: red;
+ font-size: 200%;
+}
+p.seletorclasses{
+ text-align: left;
+}

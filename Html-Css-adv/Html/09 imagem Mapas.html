@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imagem</title>
+
+    </head>
+    <body>
+        <h1>Imagem com Width e height</h1>
+        <img src="Fotos/img_chania.jpg" alt="Foto da favela" width="200" height="200">
+        <hr>
+
+        <p>Imagem de um servidor vc pode buscar</p>
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Foto do servidor dda W3s">
+        <hr>
+
+        <p>Imagem animadas</p>
+        <img src="Fotos/programming.gif" width="48px" height="49px" alt="Programando rapido">
+        <hr>
+
+        <p>Imaegm flutuante</p>
+        <p><img src="Fotos/smiley.gif" alt="smile" style="float: right; width: 42px;height: 42px;">
+        A imagem flutuara para a direita do texto</p>
+
+        <p><img src="fotos/smiley.gif" alt="smile" style="float: left; width: 42px ; height: 42px;">
+        A imagem flutuara para a esquerda do texto  </p>
+        <hr>
+        <h2><strong>Mapas de imagem</strong></h2>
+        <p>Com o mapa, vc pode criar areas clicaveias na imagem <br>
+        <em>Começa</em> com a tag <strong>[img]</strong> , depois usa o <br>
+         atributo <strong>[usemap]</strong> : começa com # ele relaciona a imagem com o mapa da imagem. <br>
+        Depois usa <strong>[map]</strong> para criar um mapa e vincular a imagem usando <br>
+    o <strong>name</strong></p>
+            <p><strong> Area</strong></p>
+            <pre>                       Forma
+                <i>rect</i> - definir uma região retangular
+                <i>circle</i> - definir uma região circular
+                <i>poly</i> - define uma região poligonal
+                <i>default</i> - define toda a região
+            </pre>
+            <p>É necessario <strong>Coordenadas [shape]</strong>
+            dos eixos x e y em pixeln das parte superior esquerda e direita em <br>
+        seguida a parte inferior </p>
+        <!--Definindo imagem na tela-->
+        <img src="Fotos/pc.jpg" alt="pc" usemap="#pc" width="200 " height="200">
+        <!-- Definindo o map da imagem-->
+        <map name="pc">
+            <!--Definir as coordenadas-->
+            <area shape="rect" coords="36, 44, 279, 350" alt="computer"
+            href="Fotos/smiley.gif" target="_blank">
+        </map>
+
+    </body>
+</html>

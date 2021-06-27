@@ -1,0 +1,60 @@
+* {
+    /* box sizing: garante para que a caixa 
+    n se quebre qnd houver o preenchimento */
+    box-sizing: border-box;
+    /* permiti o preenchimento total, garantindo que 
+    o preenchimento fique dentro da caixa e não se quebre */
+}
+
+/* Caixas ao lado */
+#box1{
+    background-color: #777777;
+}
+#box2{
+    background-color: #999999;
+}
+#box3{
+    background-color: #bbbbbb;
+}
+#box4{
+    background-color: #555555;
+}
+.box {
+    float: left;
+    width: 25%;
+    padding: 50px;
+  }
+/* clearflix para cuidar do flux do layout */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Fotos */
+
+
+  .conteiner{
+      float: left;
+      width: 33.33%;
+      padding: 0;
+  }
+
+
+  /*Flex */
+  .flex-container{
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: dodgerblue;
+
+  }
+  .flex-container .box{
+      background-color: #f1f1f1;
+      width: 50%;
+      margin: 10px;
+      text-align: center;
+      line-height: 40px;   /*altura */
+      font-size: 20px;
+
+  }

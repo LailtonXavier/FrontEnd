@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #00722c;
+        }
+        header{
+            background-color: #e5e5e5;
+            padding: 15px;
+            text-align: center;
+        }
+        .menu{
+            float: left;
+            width: 20%;
+            text-align: center;
+
+        }
+        .menu a{
+            border-left: 5px solid red;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 8px;
+            margin-top:7px ;
+            display: block; /*Separou um linque do outro de cima pra baixo*/
+            width: 100%;
+            color: black;
+
+        }
+        .main{
+            float: left;
+            width: 60%;
+            padding: 0 20px; /* Superio e inferior + direita e esquerda
+            esquerda tem 20% e direita tbm, esse bloco fica 60% no meio*/
+        }
+         .right{
+             background-color: rgba(247, 247, 11, 0.5);
+             float:left;
+             width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+         }
+         /*Footer n entra width largura pq ja esta tudo calculado*/
+         footer {
+            background-color: #861818;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 0px;
+         }
+
+        /*  Sempre estou errado aqui*/
+         @media only screen and (max-width:620px){
+             .menu, .main, .right {
+                 width: 100%;
+             }
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+           <h1>Ola mundo!</h1>
+    </header>
+     
+   
+    <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 41</a>
+    </div>
+
+    <div class="main">
+        <h2>Lorum Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+      </div>
+
+    <div class="right">
+        <h2>Sobre</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+
+    <footer>
+         <p>© copyright w3schools.com</p>
+        </footer>
+    
+    
+</body>
+</html>

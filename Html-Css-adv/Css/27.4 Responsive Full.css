@@ -1,0 +1,145 @@
+body{
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+/*
+
+        Essas configurações são tela Tv + 900
+        grande ou monitos grande
+
+*/
+/*  Header  */
+header{
+    background-color: rgb(207, 205, 205);
+    padding: 30px;
+    text-align: center;
+    margin-left: 25%;
+
+}
+header h1{
+    font-size: 30px;
+}
+/*Fim Header*/
+
+ul.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-shadow: 4px 4px 20px rgba(139, 131, 131, 0.897);
+
+    width:25%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    }
+
+ul.nav li a{
+    display:block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid white;
+}
+
+
+
+.nav li a.active{
+    background-color: rgb(146, 24, 146);
+    color: whitesmoke;
+}
+li a:hover:not(.active){
+    background-color: rgb(49, 221, 14);
+}
+li a:hover:not(.active){
+    color: black;
+}
+li:hover:not(.active){
+    border-right: none;
+}
+
+/*content*/
+div#content{
+    background-color: blanchedalmond;
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 100%;
+}
+footer{
+    background-color: #000;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    margin-left: 25%;
+}
+
+/*Pc*/
+@media screen and (max-width: 900px){
+    /*Largura do nav 100%*/
+
+    header{
+        margin-left: 0px;
+    }
+    ul.nav{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.nav{/*Efeito gostosinho*/
+        position: -webkit-sticky;
+        position: sticky;
+    }
+    .nav #rights{
+        float: right;
+        background-color: rgb(49, 221, 14);
+    }
+    
+    /*Um esquerdo do outro para forma nav horizontal*/
+    ul.nav li a{
+        float: left;
+        padding: 15px;
+        
+    }
+    /*Conteudo fica 100% na tela*/
+    div#content{
+        margin-left: 0px;
+    }
+
+    footer{
+        text-align: center;
+    }
+    
+ 
+}
+
+/*Phone*/
+@media screen and (max-width: 400px){
+    ul.nav li a{
+        text-align: center;
+        float: none;
+    }
+    ul.nav{
+        position: inherit;/*Herdando do Pai*/
+    }
+    .nav #rights{
+        float: none;
+        
+    }
+    div#content{
+        height: 100%;
+        overflow: hidden;
+    }
+    footer{
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+

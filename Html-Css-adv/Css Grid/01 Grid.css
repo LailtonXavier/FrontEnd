@@ -1,0 +1,65 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.container, .contColumns, .contRows, .gridGaps, .gridColumnRow{
+    display: grid;   /*deixa 100%*/
+    /* display: inline-grid; n fica 100% */
+    grid-template-columns: auto auto auto;/* dividido por 3*/
+    background-color: rgb(119, 119, 219);
+    padding: 5px;
+}
+.grid-container img{
+    background-color: rgb(202, 202, 236);
+    border: 1px solid steelblue;
+    padding: 0px;
+    text-align: center;  
+    width: 100%;
+}
+/*conteundos dos itens*/
+ .gcolumns, .grows, .gridgaps, .gridColumnRow > .item /*pegar tds os divs insides*/ {
+    background-color: rgb(202, 202, 236);
+    border: 1px solid steelblue;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*columns = grade da coluna*/
+.contColumns{
+    grid-column-gap: 60px;
+}   
+
+/*rows = linhas horizontal*/
+.contRows{
+    grid-row-gap: 80px;
+}
+
+/*grid gaps = espaços entre colu and row
+Espaço entre LINHA e COLUNCA, vc pode usar so um*/
+.gridGaps{
+    grid-gap: 60px 80px;
+}
+
+/*linhas e colunas*/
+/* .item:hover{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}  */
+
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+} 
+
+/* .item4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+} */
+
+/* .grid-container:hover{
+    grid-row-start: 1;
+    grid-row-end: 3;
+} */

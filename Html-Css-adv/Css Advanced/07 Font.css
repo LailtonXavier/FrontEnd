@@ -1,0 +1,24 @@
+/*
+    Link da font que podemos baixar
+    https://fontsforweb.com/index/index
+*/
+
+@font-face{
+    font-family: myFirstFont;
+    src: url(Fonts-face/SansationLight.woff);
+    
+}
+@font-face{
+    font-family: other;
+    src: url(Fonts-face/TheBlacklist.woff);
+}
+h1{
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 50px;
+}
+h2{
+    font-weight: normal;
+    font-family: other;
+    font-size: 50px;
+}

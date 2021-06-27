@@ -1,0 +1,92 @@
+
+
+/*Vertical*/
+.ul1{
+    list-style-type: none;
+    margin: 1px 1px;
+    padding: 0;
+    width: 25%;
+    height: 200px;
+    text-align: center;
+    
+}
+.li1 a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 8px 16px;
+    padding: 2px;
+    text-align: center;
+    color: black;
+}
+.li1:hover{
+    background-color: #4CAF50;
+}
+/*H1, jogando para a direita, ele flutua para a direita e conteiner maior limpa os lados*/
+.content {
+    margin: 1px ;
+    background-color: rgb(131, 125, 125);
+    text-align: center;
+    height: 200px;
+    width: 70%;
+    float: right;
+}
+ .first{
+    background-color: #4CAF50;
+}
+#nav1{
+    width: 100%;
+    border: 1px solid red;
+}
+#nav1{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Navegação Horizontal, pd usar inline ou floating*/
+
+/*
+.ul2{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.li2{/*inline joga eles um p lado do outro*/
+  /*  display: inline;
+    border: 1px solid red;
+  /*  padding: 8px 16px;
+}
+*/
+
+    /*  FLOAT*/
+
+.ul2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;/*Servi para n deixar o elemento de baixo subir*/
+    background-color: rgb(44, 41, 41);
+
+}
+/*FLoat horizontal*/
+.li2 a{
+    float: left;
+    display: block;
+    padding: 8px 16px; 
+    color: white;
+    text-decoration: none;
+}
+
+
+#first{
+    background-color: #4CAF50;
+    float: right;
+    padding: 8px 24px;
+}
+
+/*Efeito do mouse vai passar menos no #first*/
+.li2 a:hover:not(#first){
+    background-color: #000;
+}
+
