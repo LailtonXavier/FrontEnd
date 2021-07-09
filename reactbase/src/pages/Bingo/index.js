@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import PropTypes from 'prop-types';
 
 import { FaChild } from 'react-icons/fa';
 import { Container } from '../../styles/GlobalStyles';
@@ -7,34 +8,25 @@ import { Center } from './styled';
 export default function Bingo() {
   const [tables, setTables] = useState(['']);
   const [numbRand, setNumbRandom] = useState(['']);
-  const [test, setTest] = useState(['']);
-  // const [cor] = useState('color:#c3c3c3;'); // Colocando uma cor no estado ele vai buscar certo, mas manda pro filho
   // const [test, setTest] = useState(['']);
   console.log(tables);
   console.log(numbRand);
 
   useEffect(() => {
     const show = document.querySelector('.boll');
-    const cor = document.querySelector('.tablesNumbrs').classList.add('iFound');
+    const cor = document.getElementById('tablesNumbrs');
     numbRand.forEach((value, index) => {
       setTimeout(() => {
         show.innerHTML = '';
         show.innerHTML = value;
-        let i = 0;
-        while (i < tables.length) {
-          if (value === tables[i]) {
-            console.log(`achei: ${tables[i]}`);
 
-            tables[i] += cor; // AQUI SERIA O ERRO, ESTOU CRIANDO UMA CLASSE NOVA, POREM N VAI, ELA VAI PRO FILHOR
-            // console.log(`${tables[index]}valor${tables[i]}`);
-            tables[index] = cor;
-            setTest(tables[i]);
-            // reFs.current.push(tables[i]);
+        tables.forEach((valuesTables) => {
+          if (value === valuesTables) {
+            console.log(`achei: ${valuesTables}`);
+            tables[valuesTables] = cor; // AQUI SERIA O ERRO, ESTOU CRIANDO UMA CLASSE NOVA, POREM N VAI, ELA VAI PRO FILHOR
+            //     setTest(tables[i]);
           }
-
-          // console.log(test);
-          i += 1;
-        }
+        });
       }, 1000 * index);
     });
   }, [tables, numbRand]);
@@ -82,7 +74,10 @@ export default function Bingo() {
   return (
     <Container>
       <Center>
-        <h3>iguais: {test}</h3>
+        {/* <h3>iguais: {test}</h3> */}
+        {/* <button type="button" onClick={goo}> */}
+        {/* Click 28 ago niver, bat
+        </button> */}
         {/* TABLE MAIN */}
         <div className="GridContainer">
           <div className="nameBg">B</div>
@@ -93,7 +88,7 @@ export default function Bingo() {
 
           {tables &&
             tables.map((value, index) => (
-              <div className="tablesNumbrs" key={String(index)}>
+              <div id="tablesNumbrs" key={String(index)}>
                 {value}
               </div>
             ))}
@@ -112,3 +107,7 @@ export default function Bingo() {
     </Container>
   );
 }
+
+// Bingo.propTypes = {
+//   color: PropTypes.string.isRequired,
+// };

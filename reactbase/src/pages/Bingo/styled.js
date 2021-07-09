@@ -33,15 +33,17 @@ export const Center = styled.div`
 
     position: relative;
   }
-  .tablesNumbrs {
+  #tablesNumbrs {
     border-radius: 50%;
+    color: white;
+    background: red;
     border: none;
     margin: 2px;
   }
   // I found number
   .iFound {
-    color: white;
-    background: red;
+    color: red;
+    background: white;
     font-weight: 500;
   }
   div:nth-child(18) {
