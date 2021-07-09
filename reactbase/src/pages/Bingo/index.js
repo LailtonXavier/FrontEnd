@@ -23,7 +23,9 @@ export default function Bingo() {
         tables.forEach((valuesTables, indexTab) => {
           if (value === valuesTables) {
             console.log(`achei: ${tables[indexTab]}`);
-            tables[indexTab] += cor.style.color = 'red'; // AQUI SERIA O ERRO, ESTOU CRIANDO UMA CLASSE NOVA, POREM N VAI, ELA VAI PRO FILHOR
+            if (tables) {
+              cor.setAttributeNS(tables[indexTab], 'className', 'iFound'); // ELE ADICIONA NO PRIMEIRO INDICE, NÃO NOS NUMEROS QUE ESTA SAINDO
+            }
             //     setTest(tables[i]);
           }
         });
