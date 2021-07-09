@@ -20,10 +20,10 @@ export default function Bingo() {
         show.innerHTML = '';
         show.innerHTML = value;
 
-        tables.forEach((valuesTables) => {
+        tables.forEach((valuesTables, indexTab) => {
           if (value === valuesTables) {
-            console.log(`achei: ${valuesTables}`);
-            tables[valuesTables] = cor; // AQUI SERIA O ERRO, ESTOU CRIANDO UMA CLASSE NOVA, POREM N VAI, ELA VAI PRO FILHOR
+            console.log(`achei: ${tables[indexTab]}`);
+            tables[indexTab] += cor.style.color = 'red'; // AQUI SERIA O ERRO, ESTOU CRIANDO UMA CLASSE NOVA, POREM N VAI, ELA VAI PRO FILHOR
             //     setTest(tables[i]);
           }
         });
