@@ -14,7 +14,8 @@ export default function Bingo() {
 
   useEffect(() => {
     const show = document.querySelector('.boll');
-    const cor = document.getElementById('tablesNumbrs');
+    // const cor = document.getElementById('tablesNumbrs').innerHTML;
+    // const cor = document.getElementById('tablesNumbrs');
     numbRand.forEach((value, index) => {
       setTimeout(() => {
         show.innerHTML = '';
@@ -23,9 +24,16 @@ export default function Bingo() {
         tables.forEach((valuesTables, indexTab) => {
           if (value === valuesTables) {
             console.log(`achei: ${tables[indexTab]}`);
-            if (tables) {
-              cor.setAttributeNS(tables[indexTab], 'className', 'iFound'); // ELE ADICIONA NO PRIMEIRO INDICE, NÃO NOS NUMEROS QUE ESTA SAINDO
-            }
+            // cor.setAttributeNS(tables[indexTab], 'className', 'iFound'); // ELE SO ADICIONA NO PRIMEIRO INDICE, NÃO NOS NUMEROS QUE ESTA SAINDO
+            // tables[indexTab] = cor.classList.add('iFound); // ele seria a segunda forma de adicionar uma classe
+
+            // explicando
+            //  aqui mostra os dois numeros igual tanto na tabela quanto os aleatorios
+            // minha logica era adicionar uma Class no indice que saiu, porem ele n faz
+            // O problema que aparece é que estou add uma Classe no Filho e não no Pai
+            // dai usei metodos para  apontar para o pai, mas n vai msm asssim, ele diz que n reconhe
+            // o metodo.
+            // oq vc faria? ou onde estou  errando?
             //     setTest(tables[i]);
           }
         });
