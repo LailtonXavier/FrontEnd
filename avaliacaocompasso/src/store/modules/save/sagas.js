@@ -1,4 +1,5 @@
 import { takeLatest, all, call, put } from 'redux-saga/effects';
+import { toast } from 'react-toastify';
 import * as actions from './actions';
 import axios from '../../../services/axios';
 import * as types from '../types';
@@ -11,7 +12,7 @@ function* searchByName({ payload }) {
     });
     yield put(actions.searchByNameSuccess({ name }));
   } catch (e) {
-    console.log(e);
+    toast.error(e);
   }
 }
 

@@ -4,7 +4,7 @@
 
  ### `esplicando as tecnologias usadas:`
 
-  - Usei React, Styled-components, Hooks, Redux (redux saga, redux persist), React Router Dom
+  - Usei React, Styled-components, Hooks, Redux (redux saga, redux persist), React Router Dom, Toastify
 
   - `Hooks`: useState e useEffect
     - useState para salva os dados, guardando em um array para usa-lo logo
@@ -24,6 +24,8 @@
   - `Redux persist`:
      - poderia usar para salva os dados no local Storage, por exemplo o Token do usuario
 
+  - `toastify`:
+    - toastify muito bom de trabalhar, pois da pra colocar os erros ja estilizados e podemos pernalizar tambem.
 
     - `RESUMINDO`: foi um projeto muito interessante de fazer, creio que o mais
     complicado é sempre fazer as configurações do ambiente e sempre rever as
