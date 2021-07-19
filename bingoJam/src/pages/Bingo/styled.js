@@ -8,7 +8,9 @@ export const Center = styled.div`
   /** Boll Random */
   .boll {
     border: 1px solid black;
-    background: red;
+    background-image: radial-gradient(red, yellow);
+
+    /* box-shadow: inset -10px -10px 10px #660, inset 10px 3px 3px #660; */
     color: white;
     margin: auto;
 
@@ -19,7 +21,7 @@ export const Center = styled.div`
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    font-size: 20px;
+    font-size: 30px;
   }
   /**Button */
   .buttonStart {
@@ -46,8 +48,8 @@ export const Center = styled.div`
     align-items: center;
 
     border: 1px solid red;
-    /* width: 100px;
-    height: 300px; */
+    width: 100px;
+    height: 300px;
     overflow: hidden;
     font-size: 25px;
 
