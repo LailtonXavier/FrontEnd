@@ -2,6 +2,7 @@
 
 
  - npm i `para colocar pra rodar`
+ 
   ----  para instalar a pasta [node_modules]
  http://localhost:3000
 
