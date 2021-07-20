@@ -8,7 +8,7 @@ export const Center = styled.div`
   /** Boll Random */
   .boll {
     border: 1px solid black;
-    background-image: radial-gradient(red, yellow);
+    background-image: radial-gradient(circle, red, yellow);
 
     /* box-shadow: inset -10px -10px 10px #660, inset 10px 3px 3px #660; */
     color: white;
