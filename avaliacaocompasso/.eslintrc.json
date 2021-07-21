@@ -8,6 +8,10 @@
         "airbnb",
         "prettier"
     ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+  },
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
@@ -22,7 +26,9 @@
         "react-hooks"
     ],
     "rules": {
-       "prettier/prettier": "error",
+      "prettier/prettier": ["error",{
+        "endOfLine": "auto"}
+      ],
        "react/jsx-filename-extension": "off", // esses dois esta relacionado ao tipo jsx
        "react/react-in-jsx-scope":"off",           //
        "import/prefer-default-export": 0,  // relacionado a funções padroes

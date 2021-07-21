@@ -1,10 +1,26 @@
 ### `npm start`
 
 
- - npm i `para colocar pra rodar`
- 
-  ----  para instalar a pasta [node_modules]
+- antes de colocar pra rodar precisa fazer a instalação do node_modules
+com `npm i`
+
+depois: digite no terminal `npm run start`
+
+### refornçando ` npm i` + `npm run start`
+
  http://localhost:3000
+
+ - Falando sobre o erro:
+    uso o `prettier e eslint para configurar o projeto`
+    com isso, minha maquina ja esta com o ´LF ou CRLF´ configurado
+    para deixar apenas um, por isso roduo em minha maquina,
+    Dai no arquivo `.eslint.json` coloquei:
+
+    "prettier/prettier": ["error",{
+            "endOfLine": "auto"}
+          ],
+
+  com isso deixando automatico tanto LF ou CRLF
 
 
  ### `esplicando as tecnologias usadas:`
