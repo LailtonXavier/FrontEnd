@@ -108,11 +108,12 @@ Map mental
     */
 
 {
-@media(max-width: 1800px){
-    html{
+	-
+	@media(max-width: 1800px){
+	    html{
         font-size: 93.75%;
-    }
-}
+    		}
+	}
 
 @media(max-width: 720px){
     html{
@@ -122,6 +123,7 @@ Map mental
 body, input, textarea, button{
     font: 400 2rem "inter" ;
 }
+-
 
 }
 
