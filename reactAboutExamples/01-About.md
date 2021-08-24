@@ -107,25 +107,24 @@ Map mental
             no mobile = ele diminui pra 14px
     */
 
-{
 	-
-	@media(max-width: 1800px){
-	    html{
-        font-size: 93.75%;
+	- @media(max-width: 1800px){
+	  -  html{
+        - font-size: 93.75%;
     		}
 	}
 
-@media(max-width: 720px){
-    html{
-        font-size: 87.5%;
-    }
-}
-body, input, textarea, button{
-    font: 400 2rem "inter" ;
-}
+	- @media(max-width: 720px){
+    	 - html{
+        - font-size: 87.5%;
+   	 }
+	}
+	- body, input, textarea, button{
+    	 - font: 400 2rem "inter" ;
+	}
 -
 
-}
+
 
       - Carousel cards
 	-npm install react-multi-carousel --save
