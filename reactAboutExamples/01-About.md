@@ -1,3 +1,24 @@
+### todos os arquivos que precisam ser importados
+{
+	npm i eslint babel-eslint prettier eslint-config-prettier eslint-plugin-prettier -D
+	npx eslint --init
+
+	npm install --save prop-types
+
+	npm i styled-components
+
+	npm install framer-motion
+
+	npm i react-icons --save
+
+	npm i react-router-dom
+
+	npm i history
+	npm i history@4.10.1
+
+	npm i react-toastify --save
+}
+
 corrigir erro
 npm audit fix
 
