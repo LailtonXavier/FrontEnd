@@ -1,0 +1,39 @@
+ 
+ul{
+  margin-top: 30px;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  transition: all 500ms;
+}
+ul li:hover{
+  background: #51c5de;
+}
+
+ul li .edit{
+  margin-right: 15px;
+  color: #51c5de;
+}
+
+ul li .delete{
+  margin-right: 15px;
+  color: #f04c64;
+}
+
+ul li:hover .edit,
+ul li:hover .delete{
+  color: black;
+}
+ul li .edit,
+ul li .delete{
+  transition: all 600ms;
+  cursor: pointer;
+}
+
+ul li span{
+  display: flex;
+  align-items: center;
+}

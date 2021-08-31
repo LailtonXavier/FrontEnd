@@ -1,0 +1,24 @@
+
+    criando app react
+1: npx create-react-app nomeProjeto
+2:
+    - .editorconfi (botao direito e generetaion)
+    - npm i eslint babel-eslint -D, ou --save-dev
+      - precisa da extensão ESLint instalado
+      configurando: npx eslint --init > ultima opção
+      > import/export > react > tp No > browser > pupolar guide > airnb > js > yes
+      na pasta .eslintrc =
+            parserOptions: {
+            ecmaFeatures: {
+              jsx: true,
+            },
+
+
+Components
+  stateles sem estado
+  states full = retorna o metodo render pra mostrar na tela
+
+Mudei a merda do eslint agora tudo foi
+
+  - icones 
+    - npm i react-icons

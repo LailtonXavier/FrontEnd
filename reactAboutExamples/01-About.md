@@ -9,6 +9,10 @@
 
 	npm install framer-motion
 
+	npm i validator
+
+	npm install react-lodash
+
 	npm i react-icons --save
 
 	npm i react-router-dom
@@ -17,6 +21,10 @@
 	npm i history@4.10.1
 
 	npm i react-toastify --save
+
+	npm i redux react-redux
+	npm i redux-saga
+	npm i redux-persist
 }
 
 corrigir erro

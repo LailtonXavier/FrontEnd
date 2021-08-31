@@ -1,0 +1,30 @@
+
+- add
+- delete
+- edit
+- save localStorage
+
+1: return ( form > input > button-icons > ul-lis)
+2: state = { newTrf, Tarefas[]}
+  - function - mudaInpt (pegar os inputs) = this.setState({newTrf.e.target.value})
+      - this.mudaInpt = ...bind(this)
+3: {newTrf, Tarefas} > input - newTrf, Tarefas.map(tarefa) - ul.li
+4: pegando o submit = function handleSubmit(e)...
+  - e.prevtDefalut()
+  - {let newTrf, Tarefas} - newTrf.trim() = tirar os espaços
+  - verificação se existe algo : if(tarefas.indexOf(newTrf)) !== -1 > return; n faz nd se existir
+  - tarefasNew = [...tarefas] > passando o array para uma var 
+  -  passando os valores digitados no input para os lis > this.setState({ tarefas: [...tarefasNew, newTrf]})
+
+
+  novaTarefa = o valor do input 
+
+
+  dividindos os componentes 
+    precisamos intalar propos 
+      - npm i prop-types
+    o proptypes valida as coisas
+
+
+
+  
